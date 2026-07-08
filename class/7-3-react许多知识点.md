@@ -345,20 +345,23 @@
     > ```
     > 总结：`setTimeout` 返回的是**定时器 ID（数字）**,定时器 ID 是“非渲染相关”的副作用标识（如 `setTimeout/setInterval` 的返回值），需要跨渲染周期保持，但无需触发 UI 更新。因此使用`useRef`
 
-  > ![1783042530656](C:\Users\6\AppData\Roaming\Typora\typora-user-images\1783042530656.png)
 
+## 题
 
-> ![1783042654081](C:\Users\6\AppData\Roaming\Typora\typora-user-images\1783042654081.png)
+> ![1783489783989](assets/1783489783989.png)
+
+> ![1783490920360](assets/1783490920360.png)
 >
-> ![1783042963880](C:\Users\6\AppData\Roaming\Typora\typora-user-images\1783042963880.png)
 
 
 
-![1783043140397](C:\Users\6\AppData\Roaming\Typora\typora-user-images\1783043140397.png)
+>
+>
+> ![1783490982333](assets/1783490982333.png)
 
-> useEffect(() => {
-> setCount(count + 1);
-> }, []); // 依赖项数组为空
+
+
+## 改错
 
 > ![1783043489174](C:\Users\6\AppData\Roaming\Typora\typora-user-images\1783043489174.png)
 >
