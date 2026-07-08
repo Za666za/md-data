@@ -13,7 +13,7 @@
   - 地址: 
 
     - `gitee`: [data-md: 记录马力暑假md](https://gitee.com/za666za/data-md)
-
     - `github`: [Za666za/md-data](https://github.com/Za666za/md-data)
+- 某些文档较大,因为里面粘贴了ai回答,用于**速速浏览理解概念**
 
 
