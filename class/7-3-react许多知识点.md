@@ -378,14 +378,14 @@
 
   - **解析: 应该使用 ** 	`countRef.current = countRef.current + 1;`
 
-## useEffect示例
+## `useEffect`分析示例
 
 ```react
 useEffect(() => {
   if (count >= 10) return; // 终止条件
 	// 初始挂载, 产生计时器,时间到时 count+1
   const timer = setTimeout(() => {
-    // 方案1：使用函数式更新避免异步时拿到旧值
+    // 使用函数式更新避免异步时拿到旧值
     setCount(prevCount => prevCount + 1);
   }, 1000);
 	// 当count+1组件状态改变,触发渲染前return执行, 清除本次计时器
@@ -394,3 +394,9 @@ useEffect(() => {
 // 这个是在每次count变化时都产生一个计数器1s后+1
 ```
 
+> 1. 这里通过`return`跳出修改`count`的循环
+>
+> 2. 使用使用函数式更新避免异步时拿到旧值
+>    ​    ``setCount(prevCount => prevCount + 1);`
+>
+> 3. `return () => clearTimeout(timer);`返回清理计时器
