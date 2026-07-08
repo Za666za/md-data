@@ -365,9 +365,7 @@
 
 > ![1783043489174](C:\Users\6\AppData\Roaming\Typora\typora-user-images\1783043489174.png)
 >
->
-
-> ![1783043643534](C:\Users\6\AppData\Roaming\Typora\typora-user-images\1783043643534.png)
+> 解析: 应该使用 `countRef.current = countRef.current + 1; 	`
 
 > ![1783044003696](C:\Users\6\AppData\Roaming\Typora\typora-user-images\1783044003696.png)
 >
